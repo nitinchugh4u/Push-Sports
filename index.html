@@ -33,11 +33,13 @@
       width: calc(23% - 1%);
       margin-bottom: 1%;
       border-radius: 20px;
-      object-fit: cover;
+      /* object-fit: cover; */
+      object-fit: fill;
     }
 
     .cards4c img {
       border-radius: 20px;
+
     }
 
     .card3 {
@@ -58,6 +60,10 @@
 
       /* background-color: grey; */
     }
+
+    .card3c{
+        display: flex;justify-content: space-evenly; align-items: center; background-color: grey;
+}
 
     @media only screen and (max-width: 890px) {
       .cards4c {
@@ -94,6 +100,13 @@
       width: 370px;
       /* background-color: grey; */
       margin-top: 2%;
+    }
+    .full3c img{
+
+        height: 370px;
+      width: 370px;
+    object-fit: cover;
+
     }
 
     @media only screen and (max-width: 890px) {
@@ -155,9 +168,8 @@
     }
 
     .images6 {
-      height: 60px;
-      width: 60px;
-
+      height: auto;
+      width: 10%;
     }
       .header {
       padding: 10px 25px;
@@ -168,8 +180,8 @@
     }
 
     .logo {
-      width: 90px;
-      height: 40px;
+      width: 50%;
+      height: auto;
     }
 
     .ul-list {
@@ -284,7 +296,8 @@
   <div>
 
     <h1 class="text-center" style="color: red;padding: 30px;">INDIA'S NEW PLAYGROUND</h1>
-    <img src="https://pushsports.in/wp-content/uploads/2024/01/Sports-Infrastructure.jpg" alt="">
+    <!-- <img src="https://pushsports.in/wp-content/uploads/2024/01/Sports-Infrastructure.jpg" alt=""> -->
+    <img src="https://img.hotimg.com/mitch-rosen-g9SNY0aLMF0-unsplash.jpeg" alt="">
   </div>
 
 
@@ -324,7 +337,7 @@
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/Website-banner-1536x800.jpg" alt="Chicago"
           width="1100" height="500">
         <div class="carousel-caption">
-          <h3>Chicago</h3>
+          <!-- <h3>Chicago</h3> -->
           <p>Thank you, Chicago!</p>
         </div>
       </div>
@@ -354,11 +367,11 @@
   </div>
 
 
-  <div class="full2">
-    <div class="full2c"><img src="         https://pushsports.in/wp-content/uploads/2024/01/Scholarship.jpg
-            " alt="" height="320px" width="370px"></div>
-    <div class="full2c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/state_players.jpg&quot
-            " alt="" height="320px" width="370px"></div>
+  <div class="full2" >
+    <div class="full2c" > <img src="          https://pushsports.in/wp-content/uploads/2024/01/Scholarship.jpg
+            " alt=""  height="320px" width="370px"  style="    border-radius: 5px " ></div>
+    <div class="full2c" ><img src="        https://pushsports.in/wp-content/uploads/2024/02/state_players.jpg&quot
+            " alt="" height="320px" width="370px"  style="    border-radius: 5px " ></div>
 
     <!-- https://pushsports.in/wp-content/uploads/2024/01/Scholarship.jpg -->
     <!-- https://pushsports.in/wp-content/uploads/2024/02/state_players.jpg&quot -->
@@ -376,13 +389,13 @@
   <!-- here i starretsd  i 3 cards -->
   <div class="full3">
 
-    <div class="full3c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/dhawan.jpg&quot
+    <div class="full3c"><img  style="    border-radius: 5px " src="        https://pushsports.in/wp-content/uploads/2024/02/dhawan.jpg&quot
         " alt=""></div>
 
-    <div class="full3c"><img src="   https://pushsports.in/wp-content/uploads/2024/01/curruculum.jpg&quot
+    <div class="full3c"><img  style="    border-radius: 5px " src="   https://pushsports.in/wp-content/uploads/2024/01/curruculum.jpg&quot
         " alt=""></div>
 
-    <div class="full3c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/assessment.jpg&quot
+    <div class="full3c"><img  style="    border-radius: 5px " src="        https://pushsports.in/wp-content/uploads/2024/02/assessment.jpg&quot
             " alt=""></div>
   </div>
 
@@ -427,7 +440,7 @@
     </h1>
   </div>
   <div class="card3">
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Cricket</h3>
         <p>10 Centers</p>
@@ -437,7 +450,7 @@
       </div>
     </div>
 
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Swimmimg</h3>
         <p>10 Centers</p>
@@ -449,17 +462,17 @@
     </div>
 
 
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Badminton</h3>
         <p>10 Centers</p>
       </div>
-      <div>
-        <img src="	https://pushsports.in/wp-content/uploads/2024/02/badminton.png" alt="" height="170px"
-          width="170px" />
+      <div class="bm">
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/badminton.png" alt=""  height="170px"
+          width="170px" style="margin-left: -22%;" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Football</h3>
         <p>10 Centers</p>
@@ -469,7 +482,7 @@
           width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Table Tennis</h3>
         <p>10 Centers</p>
@@ -479,7 +492,7 @@
           width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Skating</h3>
         <p>10 Centers</p>
@@ -488,7 +501,7 @@
         <img src="https://pushsports.in/wp-content/uploads/2024/02/skating-2.png" alt="" height="170px" width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Basketball</h3>
         <p>10 Centers</p>
@@ -498,7 +511,7 @@
           width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Taekwondo</h3>
         <p>10 Centers</p>
@@ -508,7 +521,7 @@
           width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Chess</h3>
         <p>10 Centers</p>
@@ -517,7 +530,7 @@
         <img src="https://pushsports.in/wp-content/uploads/2024/02/chess.png" alt="" height="170px" width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Lawn Tennis</h3>
         <p>10 Centers</p>
@@ -526,7 +539,7 @@
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/tennis.png" alt="" height="170px" width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Gym</h3>
         <p>10 Centers</p>
@@ -535,7 +548,7 @@
         <img src="https://pushsports.in/wp-content/uploads/2024/02/gym-1.png" alt="" height="170px" width="170px" />
       </div>
     </div>
-    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+    <div class="card3c">
       <div>
         <h3>Karate</h3>
         <p>10 Centers</p>
