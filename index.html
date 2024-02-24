@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    img {
+      width: 100%;
+    }
+
+    .cards4 {
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+      flex-wrap: wrap;
+    }
+
+    .cards4c {
+      width: calc(23% - 1%);
+      margin-bottom: 1%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .cards4c img {
+      border-radius: 20px;
+    }
+
+    .card3 {
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+      flex-wrap: wrap;
+    }
+
+    .card3c {
+      width: calc(31% - 1%);
+      background-color: white;
+      color: black;
+      margin-bottom: 1%;
+      border-radius: 20px;
+      height: 168px;
+      /* border-radius: 20px; */
+
+      /* background-color: grey; */
+    }
+
+    @media only screen and (max-width: 890px) {
+      .cards4c {
+        width: calc(47% - 1%);
+        margin-bottom: 2%;
+      }
+
+      .card3c {
+        width: calc(47% - 1%);
+        margin-bottom: 2%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      .cards4c,
+      .card3c {
+        width: calc(96% - 1%);
+        margin-bottom: 3%;
+      }
+    }
+
+    .full3 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1%;
+      justify-content: center;
+    }
+
+    .full3c {
+      width: calc(92% / 3);
+      margin-bottom: 2%;
+      height: 370px;
+      width: 370px;
+      /* background-color: grey; */
+      margin-top: 2%;
+    }
+
+    @media only screen and (max-width: 890px) {
+      .full3c {
+        width: calc(92% / 3);
+        /* margin-bottom: 2%; */
+        height: 370px;
+        width: 370px;
+        /* background-color: grey; */
+        /* margin-top: 2%; */
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .full3c {
+        width: calc(94% / 1);
+        /* margin-bottom: 2%; */
+        height: 370px;
+        width: 370px;
+        /* background-color: grey; */
+        /* margin-top: 2%; */
+      }
+    }
+
+
+    .full2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1%;
+      justify-content: center;
+    }
+
+    .full2c {
+      width: calc(92% / 3);
+      margin-bottom: 2%;
+      /* height: 370px; */
+      /* width: 370px; */
+      /* background-color: grey; */
+      margin-top: 2%;
+    }
+
+    @media only screen and (max-width: 890px) {
+      .full2c {
+        width: calc(94%/1);
+        margin-bottom: 2%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .full2c {
+        width: calc(94%/1);
+        margin-bottom: 2%;
+      }
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .images6 {
+      height: 60px;
+      width: 60px;
+
+    }
+      .header {
+      padding: 10px 25px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 90px;
+      height: 40px;
+    }
+
+    .ul-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .list {
+      list-style: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .iconbox {
+      display: flex;
+      gap: 10px;
+    }
+
+    .icon {
+      cursor: pointer;
+    }
+
+    .close-icon {
+      display: none;
+    }
+
+    .humbox {
+      display: none;
+    }
+
+    .Allbox {
+      display: flex;
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        padding: 10px;
+      }
+
+      .ul-list {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        flex-direction: column;
+        display: none;
+        background: rgb(235, 233, 233);
+        padding: 10px 40px;
+        border-radius: 8px;
+      }
+
+      .iconbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .icon {
+        order: -1;
+      }
+
+      .list {
+        margin-top: 10px;
+      }
+
+      .humicon {
+        display: flex;
+      }
+
+      .humbox {
+        display: flex;
+      }
+    }
+
+</style>
+</head>
+
+<body style="background-color: black">
+
+
+  <header class="header">
+    <div>
+      <img class="logo" src="https://pushsports.in/wp-content/uploads/2024/01/logo-push.png" alt="" />
+    </div>
+    <div>
+      <ul class="ul-list">
+        <li class="list">About Us</li>
+        <li class="list">Locations</li>
+        <li class="list">Info Services</li>
+        <li class="list">For Schools</li>
+        <li class="list">Franchise</li>
+      </ul>
+    </div>
+
+    <div class="Allbox">
+      <div class="iconbox">
+        <i class="far fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+
+      <div class="humbox">
+        <i class="fas fa-bars icon"></i>
+        <i class="fas fa-times close-icon"></i>
+      </div>
+    </div>
+  </header>
+
+  <div>
+
+    <h1 class="text-center" style="color: red;padding: 30px;">INDIA'S NEW PLAYGROUND</h1>
+    <img src="https://pushsports.in/wp-content/uploads/2024/01/Sports-Infrastructure.jpg" alt="">
+  </div>
+
+
+  <div
+    style="display: flex; justify-content: space-around; background-color: white; align-items: center; padding: 15px;">
+
+    <img class="images6" src="https://pushsports.in/wp-content/uploads/2022/09/BIBAe.jpg" alt="">
+    <img class="images6" src="	https://pushsports.in/wp-content/uploads/2022/09/Huaweie.jpg" alt="">
+    <img class="images6" src="	https://pushsports.in/wp-content/uploads/2024/01/daone-1.png" alt="">
+    <img class="images6" src="	https://pushsports.in/wp-content/uploads/2022/09/Indigoe.jpg" alt="">
+    <img class="images6" src="	https://pushsports.in/wp-content/uploads/2022/09/vivoe.jpg" alt="">
+    <img class="images6" src="https://pushsports.in/wp-content/uploads/2022/09/Bhutanie.jpg" alt="">
+    <img class="images6" src="	https://pushsports.in/wp-content/uploads/2022/09/Carlse.jpg" alt="">
+  </div>
+  <!-- HERE IS STARTEED OF I1 CARDS -->
+  <div class="full1">
+    <div class="full1c"><img src="" alt=""></div>
+  </div>
+  <!-- here is crrusiisell -->
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/Website-banner-1536x800.jpg" alt="Los Angeles"
+          width="1100" height="500">
+        <div class="carousel-caption">
+          <!-- <h3>Los Angeles</h3> -->
+          <!-- <p>We had such a great time in LA!</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/Website-banner-1536x800.jpg" alt="Chicago"
+          width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/Website-banner-1536x800.jpg" alt="New York"
+          width="1100" height="500">
+        <div class="carousel-caption">
+          <!-- <h3>New York</h3> -->
+          <!-- <p>We love the Big Apple!</p> -->
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+<!-- here is started of i2 carrds -->
+  <div>
+    <!-- <h3  class="text-center" style="color:white">MODERN IN-SCHOOL PROGRAMS,CURRICULUM,ASSESSMENT</h3> -->
+    <h5 class="text-center" style="color: white ; margin-top: 50px; margin-bottom: 3px;">50+ PUSH STATE
+      PLAYERS,SCHOLARSHIPS</h5>
+
+    <h1 class="text-center" style="color: red; font-weight: 700; margin-bottom: 1px;">PUSH FOR GREATENESS</h1>
+  </div>
+
+
+  <div class="full2">
+    <div class="full2c"><img src="         https://pushsports.in/wp-content/uploads/2024/01/Scholarship.jpg
+            " alt="" height="320px" width="370px"></div>
+    <div class="full2c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/state_players.jpg&quot
+            " alt="" height="320px" width="370px"></div>
+
+    <!-- https://pushsports.in/wp-content/uploads/2024/01/Scholarship.jpg -->
+    <!-- https://pushsports.in/wp-content/uploads/2024/02/state_players.jpg&quot -->
+
+
+  </div>
+
+  <div>
+    <h5 class="text-center" style="color:white;  margin-top: 50px; margin-bottom: 3px; ">MODERN IN-SCHOOL
+      PROGRAMS,CURRICULUM,ASSESSMENT</h5>
+    <h1 class="text-center" style="color: red; font-weight: 700; margin-bottom: 1px;">PUSH FOR FUTURE OF EDUCATION</h1>
+  </div>
+
+
+  <!-- here i starretsd  i 3 cards -->
+  <div class="full3">
+
+    <div class="full3c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/dhawan.jpg&quot
+        " alt=""></div>
+
+    <div class="full3c"><img src="   https://pushsports.in/wp-content/uploads/2024/01/curruculum.jpg&quot
+        " alt=""></div>
+
+    <div class="full3c"><img src="        https://pushsports.in/wp-content/uploads/2024/02/assessment.jpg&quot
+            " alt=""></div>
+  </div>
+
+  <!-- here i startereted 4 cardss -->
+  <div class="cards4">
+    <div class="cards4c">
+      <!-- https://pushsports.in/wp-content/uploads/2024/02/parallax-4.jpg        -->
+      <img src=" https://pushsports.in/wp-content/uploads/2024/02/parallax-1.jpg" alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src=" https://pushsports.in/wp-content/uploads/2024/02/parallax-2.jpg" alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src="        https://pushsports.in/wp-content/uploads/2024/02/parallax-3.jpg
+          " alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src="        https://pushsports.in/wp-content/uploads/2024/02/parallax-4.jpg       
+          " alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src=" https://pushsports.in/wp-content/uploads/2024/02/parallax-5.jpg" alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src="        https://pushsports.in/wp-content/uploads/2024/02/parallax-6.jpg" alt="" height="405px"
+        width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src="        https://pushsports.in/wp-content/uploads/2024/02/parallax-7.jpg
+          " alt="" height="405px" width="253px" />
+    </div>
+    <div class="cards4c">
+      <img src="        https://pushsports.in/wp-content/uploads/2024/02/parallax-8.jpg" alt="" height="405px"
+        width="253px" />
+    </div>
+
+    <!-- Repeat these divs for the other cards -->
+  </div>
+
+  <div>
+    <h1 class="text-center" style="color: red; font-weight: 700; margin-top: 25px; margin-bottom: 20px;">PERSONALIZE
+    </h1>
+  </div>
+  <div class="card3">
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Cricket</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/cricket.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Swimmimg</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/swimming-1.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+
+
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Badminton</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/badminton.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Football</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/football-1.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Table Tennis</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="		https://pushsports.in/wp-content/uploads/2024/02/table-tennis.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Skating</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/skating-2.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Basketball</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/basketball-1.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Taekwondo</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/Taekwondo-1.png" alt="" height="170px"
+          width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Chess</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/chess.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Lawn Tennis</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/tennis.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Gym</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="https://pushsports.in/wp-content/uploads/2024/02/gym-1.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+    <div class="card3c" style="display: flex;justify-content: center; align-items: center; background-color: grey;">
+      <div>
+        <h3>Karate</h3>
+        <p>10 Centers</p>
+      </div>
+      <div>
+        <img src="	https://pushsports.in/wp-content/uploads/2024/02/karate-1.png" alt="" height="170px" width="170px" />
+      </div>
+    </div>
+    
+    <!-- Repeat these divs for the other cards -->
+  </div>
+
+  <div style="margin-top: 120px;">
+    <h1 class="text-center" style="color: red; font-weight: 700;">WHY PUSH?</h1>
+  </div>
+
+
+
+  <div class="container">
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>WORLD-CLASS INFRASTRUCTURE</h2>
+
+      <h4 style="color: grey;">Safe,Hygienic & Supervised Arenas</h4>
+    </div>
+
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>GAMIFIED ASSESSMENT TOOLS</h2>
+
+      <h4 style="color: grey;">Motivate athletes to perform better with our gamification tools</h4>
+    </div>
+
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>MAXIMUM COMPETITIVE EXPOSURE</h2>
+
+      <h4 style="color: grey;">Experience competition to beat competition</h4>
+    </div>
+
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>BEST COACHES & CURRICULUM</h2>
+
+      <h4 style="color: grey;">
+        Elite Coaches deliver our structured curriculum from beginner <br> to
+        Professional level
+      </h4>
+    </div>
+
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>SCHOLARSHIPS AND SUPPORT</h2>
+
+      <h4 style="color: grey;">Get financial and mentorship support tot achieve your best</h4>
+    </div>
+
+    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+      <h2>MAKE A CAREER</h2>
+
+      <h4 style="color: grey;">
+        Find apprenticeship and long-term employment opportunities <br> with and
+        after your sports career
+      </h4>
+    </div>
+    <!-- Remaining HTML content goes here -->
+
+    <!-- Join the Push Family Section -->
+    <div style="margin-top: 70px; margin-bottom: 10px;">
+      <h1 class="text-center" style="color: red; font-weight: 700;">JOIN THE PUSH FAMILY</h1>
+    </div>
+    <div class="container" style="background-color: black">
+      <div class="card-columns">
+        <div class="card border-0" style="background-color: black">
+          <img src="https://pushsports.in/wp-content/uploads/2024/02/career.jpg" alt="" />
+          <h3 class="text-center" style="color: white">CAREER AT PUSH</h3>
+          <div class="text-center">
+            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+          </div>
+        </div>
+        <div class="card border-0" style="background-color: black">
+          <img src="https://pushsports.in/wp-content/uploads/2024/02/franchise.jpg" alt="" />
+          <h3 class="text-center" style="color: white">FRANCHISE</h3>
+          <div class="text-center">
+            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+          </div>
+        </div>
+        <div class="card border-0" style="background-color: black">
+          <img src="https://pushsports.in/wp-content/uploads/2024/02/partnership.jpg" alt="" />
+          <h3 class="text-center" style="color: white">PARTNERSHIPS</h3>
+          <div class="text-center">
+            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script>
+  const icon = document.querySelector(".icon");
+  const closeIcon = document.querySelector(".close-icon");
+  const ulList = document.querySelector(".ul-list");
+
+  icon.addEventListener("click", function () {
+    ulList.style.display = "flex";
+    icon.style.display = "none";
+    closeIcon.style.display = "inline-block";
+  });
+
+  closeIcon.addEventListener("click", function () {
+    ulList.style.display = "none";
+    icon.style.display = "inline-block";
+    closeIcon.style.display = "none";
+  });
+</script>
