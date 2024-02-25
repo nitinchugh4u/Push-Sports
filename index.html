@@ -21,6 +21,7 @@
     img {
       width: 100%;
     }
+    
 
     .cards4 {
       display: flex;
@@ -61,8 +62,16 @@
       /* background-color: grey; */
     }
 
+    .full2c img{
+      width: 500px;
+      height: 400px;
+      object-fit: cover;
+
+    }
+
     .card3c{
-        display: flex;justify-content: space-evenly; align-items: center; background-color: grey;
+        display: flex;justify-content: space-evenly; align-items: center; background-color: #3c4142;
+    border: 1px solid #7e7e7e;
 }
 
     @media only screen and (max-width: 890px) {
@@ -140,7 +149,7 @@
     }
 
     .full2c {
-      width: calc(92% / 3);
+      /* width: calc(92% / 3); */
       margin-bottom: 2%;
       /* height: 370px; */
       /* width: 370px; */
@@ -172,11 +181,11 @@
       width: 10%;
     }
       .header {
-      padding: 10px 25px;
+      padding: 10px 40px;
       background-color: white;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content:space-between;
     }
 
     .logo {
@@ -188,8 +197,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 25px;
       margin: 0;
+      margin-right: 250px;
       padding: 0;
     }
 
@@ -232,6 +242,7 @@
         right: 10px;
         flex-direction: column;
         display: none;
+        margin-right: 0;
         background: rgb(235, 233, 233);
         padding: 10px 40px;
         border-radius: 8px;
@@ -239,7 +250,9 @@
 
       .iconbox {
         display: flex;
+        justify-content: center;
         align-items: center;
+        
         gap: 10px;
       }
 
@@ -279,11 +292,16 @@
         <li class="list">Franchise</li>
       </ul>
     </div>
+   
+    
 
     <div class="Allbox">
       <div class="iconbox">
-        <i class="far fa-user"></i>
-        <i class="fas fa-shopping-cart"></i>
+        <!-- <i class="far fa-user"></i> -->
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <img style="height: 22px; width: 22px;" src="./user.png" alt="">
+        <img style="height: 22px; width: 22px;" src="./shopping-cart.png" alt="">
+        
       </div>
 
       <div class="humbox">
@@ -295,14 +313,14 @@
 
   <div>
 
-    <h1 class="text-center" style="color: red;padding: 30px;">INDIA'S NEW PLAYGROUND</h1>
+    <h2 class="text-center" style="color: #ee2c30;font-size: 60px; font-weight: 700px; padding: 50px; ">INDIA'S NEW PLAYGROUND</h2>
     <!-- <img src="https://pushsports.in/wp-content/uploads/2024/01/Sports-Infrastructure.jpg" alt=""> -->
     <img src="https://img.hotimg.com/mitch-rosen-g9SNY0aLMF0-unsplash.jpeg" alt="">
   </div>
 
 
   <div
-    style="display: flex; justify-content: space-around; background-color: white; align-items: center; padding: 15px;">
+    style="   display: flex; justify-content: space-around; background-color: white; align-items: center; padding: 25px 80px ;">
 
     <img class="images6" src="https://pushsports.in/wp-content/uploads/2022/09/BIBAe.jpg" alt="">
     <img class="images6" src="	https://pushsports.in/wp-content/uploads/2022/09/Huaweie.jpg" alt="">
@@ -360,10 +378,10 @@
 <!-- here is started of i2 carrds -->
   <div>
     <!-- <h3  class="text-center" style="color:white">MODERN IN-SCHOOL PROGRAMS,CURRICULUM,ASSESSMENT</h3> -->
-    <h5 class="text-center" style="color: white ; margin-top: 50px; margin-bottom: 3px;">50+ PUSH STATE
-      PLAYERS,SCHOLARSHIPS</h5>
+    <h4 class="text-center" style="color: white ; font-weight: 700; margin-top: 50px; margin-bottom: 3px;  ">50+ PUSH STATE
+      PLAYERS,SCHOLARSHIPS</h4>
 
-    <h1 class="text-center" style="color: red; font-weight: 700; margin-bottom: 1px;">PUSH FOR GREATENESS</h1>
+    <h2 class="text-center" style="color: #ee2c30;font-size: 60px; letter-spacing: 1px; font-weight: 700px; margin-bottom: 1px;  ">PUSH FOR GREATENESS</h2>
   </div>
 
 
@@ -380,9 +398,9 @@
   </div>
 
   <div>
-    <h5 class="text-center" style="color:white;  margin-top: 50px; margin-bottom: 3px; ">MODERN IN-SCHOOL
-      PROGRAMS,CURRICULUM,ASSESSMENT</h5>
-    <h1 class="text-center" style="color: red; font-weight: 700; margin-bottom: 1px;">PUSH FOR FUTURE OF EDUCATION</h1>
+    <h4 class="text-center" style="color:white; font-weight: 700 ; margin-top: 50px; margin-bottom: 3px; ">MODERN IN-SCHOOL
+      PROGRAMS,CURRICULUM,ASSESSMENT</h4>
+    <h2 class="text-center" style="color: #ee2c30;font-size: 60px; font-weight: 700px; margin-bottom: 1px;">PUSH FOR FUTURE OF EDUCATION</h2>
   </div>
 
 
@@ -436,24 +454,24 @@
   </div>
 
   <div>
-    <h1 class="text-center" style="color: red; font-weight: 700; margin-top: 25px; margin-bottom: 20px;">PERSONALIZE
-    </h1>
+    <h2 class="text-center" style="color: #ee2c30;font-size: 60px; font-weight: 700px; margin-top: 25px; margin-bottom: 20px;">PERSONALIZE
+    </h2>
   </div>
   <div class="card3">
     <div class="card3c">
       <div>
-        <h3>Cricket</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;">Cricket</h3>
+        <p style="color: #bdbdbd;" >10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/cricket.png" alt="" height="170px" width="170px" />
       </div>
     </div>
 
-    <div class="card3c">
+    <div  class="card3c">
       <div>
-        <h3>Swimmimg</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Swimmimg</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/swimming-1.png" alt="" height="170px"
@@ -464,8 +482,8 @@
 
     <div class="card3c">
       <div>
-        <h3>Badminton</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Badminton</h3>
+        <p style="color: #bdbdbd;" >10 Centers</p>
       </div>
       <div class="bm">
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/badminton.png" alt=""  height="170px"
@@ -474,8 +492,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Football</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Football</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/football-1.png" alt="" height="170px"
@@ -484,8 +502,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Table Tennis</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Table Tennis</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="		https://pushsports.in/wp-content/uploads/2024/02/table-tennis.png" alt="" height="170px"
@@ -494,8 +512,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Skating</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Skating</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/skating-2.png" alt="" height="170px" width="170px" />
@@ -503,8 +521,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Basketball</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Basketball</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/basketball-1.png" alt="" height="170px"
@@ -513,8 +531,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Taekwondo</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Taekwondo</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/Taekwondo-1.png" alt="" height="170px"
@@ -523,8 +541,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Chess</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;">Chess</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/chess.png" alt="" height="170px" width="170px" />
@@ -532,8 +550,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Lawn Tennis</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Lawn Tennis</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/tennis.png" alt="" height="170px" width="170px"  style="margin-left: -15%;" />
@@ -541,8 +559,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Gym</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Gym</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="https://pushsports.in/wp-content/uploads/2024/02/gym-1.png" alt="" height="170px" width="170px" />
@@ -550,8 +568,8 @@
     </div>
     <div class="card3c">
       <div>
-        <h3>Karate</h3>
-        <p>10 Centers</p>
+        <h3 style="color: #fff;" >Karate</h3>
+        <p style="color: #bdbdbd;">10 Centers</p>
       </div>
       <div>
         <img src="	https://pushsports.in/wp-content/uploads/2024/02/karate-1.png" alt="" height="170px" width="170px" />
@@ -562,80 +580,78 @@
   </div>
 
   <div style="margin-top: 120px;">
-    <h1 class="text-center" style="color: red; font-weight: 700;">WHY PUSH?</h1>
+    <h2 class="text-center" style="color: #ee2c30;font-size: 60px; font-weight: 700px;">WHY PUSH?</h2>
   </div>
 
 
 
   <div class="container">
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+    <div class="text-center" style="color: white; margin-top: 40px; border-bottom: 0.1px solid white">
       <h2>WORLD-CLASS INFRASTRUCTURE</h2>
 
-      <h4 style="color: grey;">Safe,Hygienic & Supervised Arenas</h4>
+      <h4 style="color: grey; margin-bottom: 25px;">Safe,Hygienic & Supervised Arenas</h4>
     </div>
 
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+    <div class="text-center" style="color: white;  margin-top: 25px; border-bottom: 0.1px solid white">
       <h2>GAMIFIED ASSESSMENT TOOLS</h2>
 
-      <h4 style="color: grey;">Motivate athletes to perform better with our gamification tools</h4>
+      <h4 style="color: grey; margin-bottom: 25px;" >Motivate athletes to perform better with our gamification tools</h4>
     </div>
 
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+    <div class="text-center" style="color: white; margin-top: 25px; border-bottom: 0.1px solid white">
       <h2>MAXIMUM COMPETITIVE EXPOSURE</h2>
 
-      <h4 style="color: grey;">Experience competition to beat competition</h4>
+      <h4 style="color: grey; margin-bottom: 25px;">Experience competition to beat competition</h4>
     </div>
 
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+    <div class="text-center" style="color: white; margin-top: 25px;  border-bottom: 0.1px solid white">
       <h2>BEST COACHES & CURRICULUM</h2>
 
-      <h4 style="color: grey;">
+      <h4 style="color: grey; margin-bottom: 25px;">
         Elite Coaches deliver our structured curriculum from beginner <br> to
         Professional level
       </h4>
     </div>
 
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+    <div class="text-center" style="color: white; margin-top: 25px; border-bottom: 0.1px solid white">
       <h2>SCHOLARSHIPS AND SUPPORT</h2>
 
-      <h4 style="color: grey;">Get financial and mentorship support tot achieve your best</h4>
+      <h4 style="color: grey; margin-bottom: 25px;">Get financial and mentorship support tot achieve your best</h4>
     </div>
 
-    <div class="text-center" style="color: white; border-bottom: 0.1px solid white">
+     <div class="text-center" style="color: white; margin-top: 25px;">
       <h2>MAKE A CAREER</h2>
-
-      <h4 style="color: grey;">
-        Find apprenticeship and long-term employment opportunities <br> with and
-        after your sports career
-      </h4>
-    </div>
+      <h4 style="color: grey; margin-bottom: 25px;">Find apprenticeship and long-term employment opportunities <br/> with and after your sports career</h4>
+  </div>
+  
+    
     <!-- Remaining HTML content goes here -->
 
     <!-- Join the Push Family Section -->
     <div style="margin-top: 70px; margin-bottom: 10px;">
-      <h1 class="text-center" style="color: red; font-weight: 700;">JOIN THE PUSH FAMILY</h1>
+      <h2 class="text-center" style="color: #ee2c30;margin-bottom: 25px;font-size: 60px; font-weight: 700px;">JOIN THE PUSH FAMILY</h2>
     </div>
     <div class="container" style="background-color: black">
       <div class="card-columns">
         <div class="card border-0" style="background-color: black">
           <img src="https://pushsports.in/wp-content/uploads/2024/02/career.jpg" alt="" />
-          <h3 class="text-center" style="color: white">CAREER AT PUSH</h3>
+          <h3 class="text-center" style="color: white;  padding: 10px;">CAREER AT PUSH</h3>
           <div class="text-center">
-            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+            <button type="button" class="btn btn-danger" style="background-color:#ee2c30; ">Our Arenas</button>
           </div>
         </div>
         <div class="card border-0" style="background-color: black">
           <img src="https://pushsports.in/wp-content/uploads/2024/02/franchise.jpg" alt="" />
-          <h3 class="text-center" style="color: white">FRANCHISE</h3>
+          <h3 class="text-center" style="color: white; padding: 10px; ">FRANCHISE</h3>
           <div class="text-center">
-            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+            <button type="button" class="btn btn-danger" style="background-color:#ee2c30; ">Our Arenas</button>
           </div>
         </div>
         <div class="card border-0" style="background-color: black">
           <img src="https://pushsports.in/wp-content/uploads/2024/02/partnership.jpg" alt="" />
-          <h3 class="text-center" style="color: white">PARTNERSHIPS</h3>
+          <h3 class="text-center" style="color: white ; padding: 10px;">PARTNERSHIPS</h3>
           <div class="text-center">
-            <button type="button" class="btn btn-danger" style="background-color: red;">Our Arenas</button>
+            <button type="button" class="btn btn-danger" style="background-color:#ee2c30; ">Our Arenas</button>
           </div>
         </div>
       </div>
@@ -663,3 +679,8 @@
     closeIcon.style.display = "none";
   });
 </script>
+
+
+
+
+
